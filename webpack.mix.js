@@ -12,7 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .vue()
     .sass('resources/sass/app.scss', 'public/css');
 
-mix.browserSync('http://hoduken.test');
+mix.browserSync('http://localhost:8080/Hoduken/public/');
